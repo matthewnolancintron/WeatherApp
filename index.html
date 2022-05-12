@@ -1,0 +1,49 @@
+<!-- 
+    a weather forecast site:
+    ------------------------
+    -use weather API,
+    -allow user to:
+        -search for a specific location
+        -toggle displaying the data
+         in Fahrenheit or Celsius.
+    -change the look of the page based on the data:
+        -color of the background 
+        adding images that describe the weather.
+        (You could even use the Giphy API to find appropriate weather-related gifs and display them). Feel free to use promises or async/await in your code,
+        though you should try to become comfortable with both.
+
+
+        
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <form id="weatherDataForm">
+        <legend>search current weather data by city name</legend>
+        <label for="cityName">city name</label>
+        <input type="search" id="cityName">
+        <button id="searchForWeather" type="submit" form="weatherDataForm">search</button>
+    </form>
+
+    <div id="weatherDataDisplay">
+        <p>weatherData</p>:
+        <div>
+            
+        </div>
+    </div>
+
+    <div class="loading">
+        <p>time to load in ms:</p>
+        <p id="runtime"></p>
+    </div>
+
+</body>
+</html>

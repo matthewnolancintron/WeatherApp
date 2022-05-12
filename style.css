@@ -1,0 +1,7 @@
+#weatherData{
+    border: solid black 1px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap: 2%;
+}
